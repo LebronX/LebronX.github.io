@@ -1,16 +1,26 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
-<html lang="en-us">
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+{% include head.html %}
 
-  {% include head.html %}
+<body>
+    <div class="wrapper">
+        {% include sidebar.html %}
+        
+        <div class="main-wrapper">
+           
+           {{content}}
+            
+        </div><!--//main-body-->
+    </div>
+ 
+{% include footer.html %}
+ 
+{% include scripts.html %}
+</body>
+</html> 
 
-  <body class="{{ page.layout }}{% if page.url == '/' %} home{% endif %}">
-
-    {% include sidebar.html %}
-
-    <main class="container">
-      {{ content }}
-    </main>
-
-    {% include custom-foot.html %}
-  </body>
-</html>

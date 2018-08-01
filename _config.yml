@@ -1,29 +1,52 @@
-#Update all the sections by editing the data.yml file inside _data folder.
 
-baseurl: '/online-cv' #change it according to your repository name
-
-# Style will be applied only after restarting the build or serve. Just choose one of the options.
-theme_skin: # blue turquoise green berry orange ceramic
-
-# uncomment the next line, if you want the education section displayed in main instead of the sidebar
-#education_in_main: True
-
-# Tracker
-analytics: UA-83979019-1
-
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+# Site settings
+title: Paul E. Soto
+name: Paul E. Soto
+subtitle: PhD Candidate in Economics
+email: paul.soto@upf.edu
+description: >
+  PhD Candidate in Economics
+baseurl: ""
+url: "https://pesoto.github.io/"
+github_username:  pesoto
+disqus_baseurl: "https://pesoto.github.io/"
+disqus_shortname: https-pesoto-github-io
+permalink: :title
 
 # Build settings
-encoding: "utf-8"
-compress_html: # - http://jch.penibelst.de/
-  clippings: all
-  ignore:
-    envs: development
+markdown: kramdown
+paginate: 5
+paginate_path: "/page:num/"
+inter_post_navigation: true
 
-# Development Settings
-port: 4000
-host: 0.0.0.0
-safe: false
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      author: "Paul E. Soto"
+
+
+
+# External gems
+gems:
+  - jekyll-paginate
+  - jemoji
+  - jekyll-seo-tag
+
+
+
+social:
+  - name: GitHub
+    icon: github
+    username: pesoto
+    url: https://github.com/pesoto
+    desc: Fork me on GitHub
+    share: false
+
+  - name: LinkedIn
+    icon: linkedin
+    username: Paul E. Soto
+    url: https://linkedin.com/pesoto
+    desc: Connect with me on LinkedIn
+    share: true

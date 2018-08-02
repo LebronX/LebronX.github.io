@@ -1,16 +1,16 @@
 
 # Site settings
-title: Paul E. Soto
-name: Paul E. Soto
-subtitle: PhD Candidate in Economics
-email: paul.soto@upf.edu
+title: Xuan XIE
+name: Xuan XIE
+subtitle: Senior student in Software Engineering
+email: xiex27@mail2.sysu.edu.cn
 description: >
-  PhD Candidate in Economics
+  Senior student in Software Engineering
 baseurl: ""
-url: "https://pesoto.github.io/"
-github_username:  pesoto
-disqus_baseurl: "https://pesoto.github.io/"
-disqus_shortname: https-pesoto-github-io
+url: "https://lebronx.github.io/"
+github_username:  lebronx
+disqus_baseurl: "https://lebronx.github.io/"
+disqus_shortname: 
 permalink: :title
 
 # Build settings
@@ -24,7 +24,7 @@ defaults:
     scope:
       path: ""
     values:
-      author: "Paul E. Soto"
+      author: "Xuan XIE"
 
 
 
@@ -39,14 +39,8 @@ gems:
 social:
   - name: GitHub
     icon: github
-    username: pesoto
-    url: https://github.com/pesoto
+    username: lebronx
+    url: https://github.com/lebronx
     desc: Fork me on GitHub
     share: false
 
-  - name: LinkedIn
-    icon: linkedin
-    username: Paul E. Soto
-    url: https://linkedin.com/pesoto
-    desc: Connect with me on LinkedIn
-    share: true
